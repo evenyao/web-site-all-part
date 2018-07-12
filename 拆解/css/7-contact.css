@@ -1,0 +1,117 @@
+/* main contact板块样式 */
+#contact {
+  min-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact {
+  height: 600px;
+  background-color: #222;
+  background-image: url(../img/star.png);
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+#contact h2 {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 55px;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  color: #fff;
+  padding-bottom: 55px;
+}
+
+#contact .fill-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+#contact input {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+#contact textarea {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  height: 175px;
+}
+
+#contact .you-acount {
+  float: left;
+  margin-right: 50px;
+}
+
+#contact .you-message {
+  float: left;
+}
+
+#contact ::-webkit-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact :-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact ::-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact :-ms-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #fed136;
+  box-shadow: none
+}
+
+#contact button {
+  /* 按钮指针变为手势 */
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f7ba3e;
+  padding: 15px 40px;
+  border-radius: 4px;
+  opacity: 0.8;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact button:hover {
+  opacity: 1;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}

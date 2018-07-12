@@ -1,0 +1,101 @@
+/* main timehistory板块样式 */
+#timehistory {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#timehistory h2 {
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+#timehistory >p {
+  font-size: 15px;
+}
+
+#timehistory .timeline > li {
+  position: relative;
+  margin-top: 100px;
+}
+
+/* 调整奇偶行布局 */
+#timehistory .timeline > li:nth-child(odd) {
+  /* padding-right: 50% 减去img宽度的一半  */
+  padding-right: calc(50% - 100px);
+  /* detail中的字体靠右 */
+  text-align: right;
+}
+
+#timehistory .timeline > li:nth-child(odd) .detail {
+  position: absolute;
+  margin-right: 650px;
+  top: 42px;
+}
+
+#timehistory .timeline > li:nth-child(odd) img {
+  float: right;
+}
+
+#timehistory .timeline > li:nth-child(even) {
+  /* padding-right: 50% 减去img宽度的一半, 偶数行相反 */
+  padding-left: calc(50% - 100px);
+  /* detail中的字体靠左, 偶数行相反 */
+  text-align: left;
+}
+
+#timehistory .timeline > li:nth-child(even) .detail {
+  position: absolute;
+  /* 偶数行相反 */
+  margin-left: 250px;
+  top: 45px;
+}
+
+#timehistory .timeline > li:nth-child(even) img {
+  /* 偶数行相反 */
+  float: left;
+}
+
+#timehistory .timeline > li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#timehistory .timeline img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid lightblue;
+}
+
+#timehistory h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#timehistory h4 {
+  color: grey;
+}
+
+/* 利用伪元素实现中间竖线 */
+#timehistory .timeline > li::before {
+  content: '';
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  margin-left: 0px;
+  display: inline-block;
+  height: 100px;
+  width: 3px;
+  background-color: lightblue;
+}
+
+/* 让竖线末端消失 */
+#timehistory .timeline > li:last-child::before {
+  height: 0;
+}
+
+#timehistory .timeline > li:last-child {
+  margin-bottom: 150px;
+}

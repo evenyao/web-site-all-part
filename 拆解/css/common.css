@@ -1,0 +1,54 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 公用 common css */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f7ba3e;
+  padding: 15px 40px;
+  border-radius: 4px;
+  opacity: 0.8;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+.button:hover {
+  opacity: 1;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+.layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font: 14px/1.5 Arial;
+  background: #fff;
+  color: #444;
+}

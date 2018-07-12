@@ -1,0 +1,33 @@
+/* main city板块样式 */
+#city {
+  min-width: 1000px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#city > h2 {
+  font-size: 40px;
+}
+
+#city > p {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#city > ul .iconfont {
+  font-size: 60px;
+}
+
+#city > ul > li {
+  float: left;
+  width: 33.33%;
+  padding: 20px 30px;
+}
+
+#city h3 {
+  font-size: 26px;
+}
+
+#city > ul p {
+  margin-top: 20px;
+}

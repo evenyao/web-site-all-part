@@ -1,0 +1,52 @@
+/* main aboutme板块样式 */
+#aboutme {
+  min-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ddd;
+}
+
+#aboutme h2 {
+  font-size: 40px;
+  padding-top: 55px;
+}
+
+#aboutme .team-member img {
+  border: 3px solid lightblue;
+  width: 200px;
+  height: 200px;
+}
+
+#aboutme .team-member {
+  display: inline-block;
+  margin: 50px;
+  padding-top: 5px;
+}
+
+#aboutme a {
+  display: inline-block;
+  font-size: 40px;
+  margin: 7px;
+  color: grey;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+#aboutme a:hover {
+  color: orange;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* 隐藏社交账号按钮 */
+#aboutme .none-buttons {
+  visibility:hidden;
+}
+
+#aboutme .tip {
+  padding-bottom: 60px;
+}

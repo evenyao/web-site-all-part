@@ -1,0 +1,20 @@
+/* main aside板块样式 */
+#aside {
+  min-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#aside .adv-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside .adv {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+}

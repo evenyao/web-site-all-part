@@ -1,0 +1,535 @@
+/* header样式 */
+header {
+  position: relative;
+  height: 100%;
+  min-width: 1200px;
+  min-height: 600px;
+  background: #000 url(../img/header.png) center center no-repeat;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header .navbar .logo {
+  position: fixed;
+  font-family: "Impact";
+  color: #f7ba3e;
+  font-size: 39px;
+  float: left;
+  margin-top: 12px;
+}
+
+header .navbar ul {
+  float: right;
+}
+
+header .navbar li {
+  float: left;
+  margin-top: 20px;
+}
+
+header .nav a {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 5px;
+  margin-left: 17px;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+header .nav a:hover {
+  background: #f7ba3e;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+header .intro {
+  /* intro通过position居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+header .intro h1 {
+  font-size: 40px;
+}
+
+header .intro h2 {
+  font-family: "Droid Serif","Helvetica Neue";
+  font-size: 55px;
+  margin-top: 20px;
+}
+
+header .intro .button {
+  margin-top: 20px;
+}
+
+
+
+/* main city板块样式 */
+#city {
+  min-width: 1000px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#city > h2 {
+  font-size: 40px;
+}
+
+#city > p {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#city > ul .iconfont {
+  font-size: 60px;
+}
+
+#city > ul > li {
+  float: left;
+  width: 33.33%;
+  padding: 20px 30px;
+}
+
+#city h3 {
+  font-size: 26px;
+}
+
+#city > ul p {
+  margin-top: 20px;
+}
+
+
+
+/* main - team 板块样式 */
+#team {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#team h2 {
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+#team>p {
+  font-size: 15px;
+}
+
+.all-player {
+  margin-top: 40px;
+}
+
+.player {
+  margin: 15px;
+  margin-bottom: 70px;
+  width: calc(33.33% - 30px);
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+
+.player img {
+  width: 100%;
+  height: 100%;
+}
+
+.player a {
+  height: 200px;
+  display: inline-block;
+}
+
+.player .name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.player .cname {
+  font-size: 13px;
+  color: grey;
+}
+
+.player p {
+  margin: 8px;
+  margin-bottom: 11px;
+}
+
+
+
+/* main timehistory板块样式 */
+#timehistory {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#timehistory h2 {
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+#timehistory >p {
+  font-size: 15px;
+}
+
+#timehistory .timeline > li {
+  position: relative;
+  margin-top: 100px;
+}
+
+/* 调整奇偶行布局 */
+#timehistory .timeline > li:nth-child(odd) {
+  /* padding-right: 50% 减去img宽度的一半  */
+  padding-right: calc(50% - 100px);
+  /* detail中的字体靠右 */
+  text-align: right;
+}
+
+#timehistory .timeline > li:nth-child(odd) .detail {
+  position: absolute;
+  margin-right: 650px;
+  top: 42px;
+}
+
+#timehistory .timeline > li:nth-child(odd) img {
+  float: right;
+}
+
+#timehistory .timeline > li:nth-child(even) {
+  /* padding-right: 50% 减去img宽度的一半, 偶数行相反 */
+  padding-left: calc(50% - 100px);
+  /* detail中的字体靠左, 偶数行相反 */
+  text-align: left;
+}
+
+#timehistory .timeline > li:nth-child(even) .detail {
+  position: absolute;
+  /* 偶数行相反 */
+  margin-left: 250px;
+  top: 45px;
+}
+
+#timehistory .timeline > li:nth-child(even) img {
+  /* 偶数行相反 */
+  float: left;
+}
+
+#timehistory .timeline > li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#timehistory .timeline img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid lightblue;
+}
+
+#timehistory h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#timehistory h4 {
+  color: grey;
+}
+
+/* 利用伪元素实现中间竖线 */
+#timehistory .timeline > li::before {
+  content: '';
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  margin-left: 0px;
+  display: inline-block;
+  height: 100px;
+  width: 3px;
+  background-color: lightblue;
+}
+
+/* 让竖线末端消失 */
+#timehistory .timeline > li:last-child::before {
+  height: 0;
+}
+
+#timehistory .timeline > li:last-child {
+  margin-bottom: 150px;
+}
+
+
+
+/* main aboutme板块样式 */
+#aboutme {
+  min-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ddd;
+}
+
+#aboutme h2 {
+  font-size: 40px;
+  padding-top: 55px;
+}
+
+#aboutme .team-member img {
+  border: 3px solid lightblue;
+  width: 200px;
+  height: 200px;
+}
+
+#aboutme .team-member {
+  display: inline-block;
+  margin: 50px;
+  padding-top: 5px;
+}
+
+#aboutme a {
+  display: inline-block;
+  font-size: 40px;
+  margin: 7px;
+  color: grey;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+#aboutme a:hover {
+  color: orange;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* 隐藏社交账号按钮 */
+#aboutme .none-buttons {
+  visibility:hidden;
+}
+
+#aboutme .tip {
+  padding-bottom: 60px;
+}
+
+
+
+/* main aside板块样式 */
+#aside {
+  min-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#aside .adv-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside .adv {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+
+/* main contact板块样式 */
+#contact {
+  min-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact {
+  height: 600px;
+  background-color: #222;
+  background-image: url(../img/star.png);
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+#contact h2 {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 55px;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  color: #fff;
+  padding-bottom: 55px;
+}
+
+#contact .fill-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+#contact input {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+#contact textarea {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  height: 175px;
+}
+
+#contact .you-acount {
+  float: left;
+  margin-right: 50px;
+}
+
+#contact .you-message {
+  float: left;
+}
+
+#contact ::-webkit-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact :-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact ::-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact :-ms-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #fed136;
+  box-shadow: none
+}
+
+#contact button {
+  /* 按钮指针变为手势 */
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f7ba3e;
+  padding: 15px 40px;
+  border-radius: 4px;
+  opacity: 0.8;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact button:hover {
+  opacity: 1;
+  /* 延迟美化 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+
+
+/* header样式 */
+footer {
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+footer .foot-bar {
+  height: 50px;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .foot-bar {
+  width: 240px;
+  height: 50px;
+}
+
+footer a {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+
+footer a {
+  color: #000;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* footer-bar flex居中 */
+footer .foot-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-buttons a {
+  display: inline-block;
+  font-size: 40px;
+  margin: 7px;
+  color: grey;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+footer a:hover {
+  color: orange;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}

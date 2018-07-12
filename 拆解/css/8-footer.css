@@ -1,0 +1,61 @@
+﻿/* header样式 */
+footer {
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+footer .foot-bar {
+  height: 50px;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .foot-bar {
+  width: 240px;
+  height: 50px;
+}
+
+footer a {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+
+footer a {
+  color: #000;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* footer-bar flex居中 */
+footer .foot-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-buttons a {
+  display: inline-block;
+  font-size: 40px;
+  margin: 7px;
+  color: grey;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+footer a:hover {
+  color: orange;
+  /* 特效 */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}

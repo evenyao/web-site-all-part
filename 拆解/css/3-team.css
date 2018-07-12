@@ -1,0 +1,58 @@
+/* main - team 板块样式 */
+#team {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#team h2 {
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+#team>p {
+  font-size: 15px;
+}
+
+.all-player {
+  margin-top: 40px;
+}
+
+.player {
+  margin: 15px;
+  margin-bottom: 70px;
+  width: calc(33.33% - 30px);
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+
+.player img {
+  width: 100%;
+  height: 100%;
+}
+
+.player a {
+  height: 200px;
+  display: inline-block;
+}
+
+.player .name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.player .cname {
+  font-size: 13px;
+  color: grey;
+}
+
+.player p {
+  margin: 8px;
+  margin-bottom: 11px;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
